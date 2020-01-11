@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".fragment.DownloadedFragment">
+
+    <RelativeLayout
+            android:id="@+id/rlData"
+            android:layout_width="match_parent" android:layout_height="match_parent"
+            >
+        <com.skydoves.androidveil.VeilRecyclerFrameView
+                android:id="@+id/rvMedia"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:veilFrame_layout="@layout/adapter_media_gallery"
+                app:veilFrame_veiled="true"
+                app:veilFrame_shimmerEnable="true"
+                app:veilFrame_baseColor="@color/fastlane_background"
+                app:veilFrame_highlightColor="@color/colorWhiteOP"
+                app:veilFrame_baseAlpha="0.6"
+                app:veilFrame_highlightAlpha="1.0"
+                app:veilFrame_radius="8dp"
+        />
+
+    </RelativeLayout>
+
+</FrameLayout>

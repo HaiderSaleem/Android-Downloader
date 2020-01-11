@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="floatingHorizontalButton">
+        <item name="colorPrimary">@color/colorWhiteOPA</item>
+        <item name="colorPrimaryDark">@color/colorWhiteOPA</item>
+        <item name="colorAccent">@color/colorWhiteOPA</item>
+    </style>
+    <style name="floatingButton">
+        <item name="colorPrimary">@color/colorWhiteOP</item>
+        <item name="colorPrimaryDark">@color/colorWhiteOP</item>
+        <item name="colorAccent">@color/fastlane_background</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+</resources>

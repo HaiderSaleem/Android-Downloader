@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:id="@+id/rlData"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="3dp">
+
+
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:background="@drawable/rl_bg">
+
+
+        <TextView
+                android:id="@+id/tvFileName"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+        />
+
+        <ImageView
+                android:id="@+id/iv"
+                android:layout_width="40dp" android:layout_height="40dp"
+                android:background="@mipmap/ic_apk"
+               android:layout_below="@+id/tvFileName"
+                android:layout_marginStart="10dp"
+        />
+        <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/iv"
+                android:layout_marginStart="10dp"
+                android:textSize="10sp"
+           />
+        <RelativeLayout
+                android:layout_below="@+id/tvFileName"
+                android:layout_width="wrap_content" android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="5dp"
+        >
+
+            <Button
+                    android:id="@+id/bPause"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:ems="7"
+                    android:background="@drawable/btn_login"
+                    android:text="Pause"
+                    android:visibility="gone"
+
+            />
+            <Button
+                    android:id="@+id/bComplete"
+                    android:layout_margin="5dp"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:textAllCaps="true"
+                    android:layout_centerVertical="true"
+                    android:ems="7"
+                    android:background="@drawable/btn_login"
+                    android:text="Open"
+                    android:visibility="gone"
+
+            />
+
+            <Button
+                    android:id="@+id/bCancel"
+                    android:layout_toEndOf="@+id/bPause"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content" android:layout_height="40dp"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:ems="7"
+                    android:background="@drawable/btn_session"
+                    android:text="Cancel"
+            />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

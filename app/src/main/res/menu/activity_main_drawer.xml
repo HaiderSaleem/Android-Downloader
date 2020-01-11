@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="@string/main">
+    <menu>
+        <item
+            android:id="@+id/nav_downloading"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/downloading" />
+
+        <item
+            android:id="@+id/nav_downloaded"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/downloaded" />
+
+        <item
+            android:id="@+id/nav_my_favourite"
+            android:icon="@mipmap/ic_launcher"
+            android:title="@string/my_favourite" />
+
+    </menu>
+    </item>
+</menu>
